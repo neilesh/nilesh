@@ -1,0 +1,114 @@
+* {margin:0; padding:0}
+/* --- Page Structure  --- */
+
+#container {
+  float:left;
+  width:100%;
+  margin-right:-19em;
+  padding:0 0 1em;
+  position:relative;
+  min-height:0
+}
+
+#side{
+  float:right;
+  display:inline;
+  width:18em;
+  padding-bottom:1.3em;
+  position:relative;
+  color:#e3e3e3;
+  overflow:hidden
+}
+p {margin: 0 10px 1em}
+.strong{font-weight:700}
+.clear {clear:both}
+
+/* --- Headings --- */
+h1 {font-family: Arial, sans-serif;}
+
+
+h4 a {float: left; width: 666px; margin: 0 auto; padding: 10px 0px 10px -10px; font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; color: #000000; text-decoration:none;}
+h5 a { margin: 0 auto; padding: 8px 15px; font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; color: #000000; background-color: #c9ccff; text-decoration:none;}
+
+h2, h3, h4, h5 {font-size:1em}
+
+#main h2 {background-color:#f0f0f0}
+
+#side, #side h2, #side h3 {background:#000; color:#e3e3e3}
+
+#side h2 {border-bottom:0px solid #484b51}
+
+
+/* --- Accordion --- */
+.js #main .accordion {visibility:hidden}
+
+.js #side .accordion {display:none}
+
+.accordion {margin:0; padding:0 10px}
+
+.accordion li {list-style-type:none}
+
+.accordion li.last-child {margin-left:19px; list-style-type:disc}
+
+#side ul.accordion ul {margin:0; padding:0 0 0 20px;}
+
+.accordion .outer {border:0px solid #dadada; border-width:0 0px 0px; background: #fff}
+
+.accordion .inner {margin-bottom:0; padding:.5em 20px 1em; position:relative; overflow:hidden; }
+
+.accordion .inner .inner {background-image: url(../images/cell_bottom_bg.png);
+	background-repeat: repeat-x;
+	background-position: center bottom;
+	margin: 0px 0px 0px 1px; padding: 15px 15px; font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; color: #000000; background-color: #FAF8F2; border-bottom: 1px solid #DEDEDE; border-right: 1px solid #ffffff;}
+
+.accordion .h {padding-top:.3em} /* vertical padding instead of vertical margin (ie8) */
+
+.accordion p {margin-top:.5em}
+
+/*  
+  Add styles for all links in the 'accordion':
+.accordion a {...}
+*/    
+
+a.trigger {padding-left:20px; background-image: url(../images/down_arrow.png); background-repeat: no-repeat; background-position: 620px 50%;  font-weight:700}
+
+a.trigger.open {background-image: url(../images/up_arrow.png)}
+
+.last-child a.trigger{padding-left:1px; background-image:none; font-weight:normal}
+
+#main a.trigger {background-color:#ffffff}
+
+#main a.trigger.open {border-color:#ffffff; background-color:#ffffff}
+
+#main a:hover.trigger.open, #main a:focus.trigger.open, #main a:active.trigger.open {border-color:#ffffff}
+
+#side a.active{font-weight:700; color:#f72; text-decoration:none}
+
+
+ul#ofsubmenu .sub {
+	position: absolute;	
+	top: 20px; 
+	right: 10px;
+	margin-top: 5px;
+	background: #333333 url(../images/box_arrow.png) no-repeat  center 0px;
+	padding: 5px 10px;
+	float: left;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	display: none;
+	z-index: 50;
+	behavior: url(../pie/pie.htc);
+	
+}
+
+ul#ofsubmenu li .sub ul{
+	list-style: none;
+	margin: 0; padding: 0;
+	width: 150px;
+	float: left;
+}
+ul#ofsubmenu .sub ul li {
+	color: #fff;
+	
+}

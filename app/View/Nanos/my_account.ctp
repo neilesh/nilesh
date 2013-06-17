@@ -1,0 +1,1 @@
+<html><head></head><body><div><span>welcome user <?php ?></span></div></body></html>

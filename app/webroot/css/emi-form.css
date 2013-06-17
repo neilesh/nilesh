@@ -1,0 +1,119 @@
+.clear {
+	clear: both;
+}
+#emiCalculator h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	color: #000;
+}
+#emiCalculator p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 15px;
+	font-weight: 100;
+	color: #333;
+}
+#nano-radio {
+	height: 205px;
+	width: 200px;
+	background-image: url(../images/emi_nano.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+	float: left;
+	text-align: center !important; margin-right: 10px; margin-left:10px;
+}
+#nano-radiocx {
+	height: 205px;
+	width: 200px;
+	background-image: url(../images/emi_nanocx.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+	float: left;
+	text-align: center !important; margin-right: 10px;
+}
+#nano-radiolx {
+	height: 205px;
+	width: 200px;
+	background-image: url(../images/emi_nanolx.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+	float: left;
+	text-align: center !important; margin-right: 10px;
+}
+#nano-radio input, #nano-radiocx input, #nano-radiolx input {margin:5px; width:1.8em;height:1.8em;}
+#form-phase2 {
+	/* width: 560px; */
+	float: left;
+	border: 1px solid #ffe599;
+	margin-top: 30px;
+	padding: 55px 50px;
+}
+#form-phase2 input {
+	font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#666; padding: 2px 0 0 4px;
+	border: 2px solid #d0cbb8; background-color:#FFFFFF;
+	display: block;
+	float: left; margin-bottom:15px; width:240px; height:21px; margin-right:15px;
+}
+#form-phase2 select {
+	font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#666; padding: 2px 0 0 4px;
+	border: 2px solid #d0cbb8; background-color:#FFFFFF;
+	display: block;
+	float: left; margin-bottom:15px; width:245px; height:25px; margin-right:15px;
+}
+
+#form-phase2 .readonly-input { background-color: #ede9da !important;}
+
+#emi-submit {
+	background-image: url(../images/emi-check-now.gif) !important;
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 30px !important;
+	width: 113px !important; border:none !important;
+	background-color: transparent; cursor: pointer; margin-bottom:15px;
+}
+.emi-result {
+	background-color: #feefcc;
+	height: 79px;
+	width: 166px;
+	margin: 15px 0;
+	text-align: center;
+	float: left;
+}
+.emi-result h4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	color: #333333;
+	text-transform: uppercase;
+	padding-top: 7px;
+}
+.emi-result h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	font-weight: 700;
+	color: #333333;
+	padding-top: 5px;
+}
+#emi-note {
+	margin: 15px 0;
+	clear: both;
+}
+#emi-note p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	color: #333;
+}
+#emi-note ul li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: 100;
+	color: #333;
+	margin-bottom: 7px;
+}
+#emi-note ul {
+	margin-left: 15px;
+	list-style-image: url(../images/emi-list.gif);
+	margin-top: 10px;
+}
