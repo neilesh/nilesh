@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* CSS TABS */
+.Compare-heading {background-color:#c9ccff; display:block; clear:both; overflow:hidden; font-family:Arial, Helvetica, sans-serif; font-size:18px; font-weight:700; padding:10px 6px;}
+UL.Compare {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+			background-color:#c9ccff; display:block; clear:both; overflow:hidden;
+        }
+ 
+        UL.Compare LI {
+            display: block; float:left;
+        }
+ 
+        UL.Compare LI A {
+			background-color:#c9ccff; display:block; float:left;
+            padding: 7px;
+            text-decoration: none;
+			font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:700; text-transform:uppercase; color:#333333;
+        }
+ 
+        UL.Compare LI A.selected,
+        UL.Compare LI A:hover {
+            background-color: #FFF;
+            color: #333;
+            
+        }
+ 
+        UL.Compare LI A:focus {
+            outline: 0;
+        }
+ 
+        div.tabCompare > div {
+            margin-top: 3px;
+        }
+ 
+        div.tabCompare > div h2 {
+            margin-top: 0;
+        }
+		.tableHeader {background-color: #dbdbdb !important;}
+		.tableHeader h2 {font-family:Arial, Helvetica, sans-serif; font-size:13px !important; font-weight:700 !important; color:#000; text-align: justify;
+			-webkit-transform: matrix(0.936,-0.286,0.289,0.946,-1.343,-5.415);
+-moz-transform: matrix(0.936,-0.286,0.289,0.946,-1.343px,-5.415px);
+-ms-transform: matrix(0.936,-0.286,0.289,0.946,-1.343,-5.415);
+-o-transform: matrix(0.936,-0.286,0.289,0.946,-1.343,-5.415);
+transform: matrix(0.936,-0.286,0.289,0.946,-1.343,-5.415);
+			/* Internet Explorer */
+			filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+			}
+		div.tabCompare > div table {background-color:#FFFFFF;}
+		.tdYellow {background-color:#fff9e6 !important;}
+		div.tabCompare > div th { font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:700; color:#000; text-align:left; padding:20px 0 5px 20px; border-bottom:1px solid #dbdbdb; border-right:1px solid #FFF; background-color:#f2f2f2;}
+		div.tabCompare > div th strong { font-weight:100;}
+		div.tabCompare > div th h3 { font-family:Arial, Helvetica, sans-serif; font-size:18px; font-weight:700; color:#000; text-align:left; padding-top:10px;}
+		div.tabCompare > div td { font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:100; color:#000; text-align:left; padding:20px 20px 5px; border-bottom:1px solid #dbdbdb; border-right:1px solid #FFF;}
+		
+/* 360 view */
+.patch360 {background-color:#c9ccff; height:10px; clear:both; display:block;}
+UL.view360 {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+			display:block; clear:both; overflow:hidden;
+        }
+ 
+        UL.view360 LI {
+            display: block; float:left;
+        }
+ 
+        UL.view360 LI A {
+			background-color:#dbdbdb; display:block; float:left; border-bottom:1px solid #FFF; margin-right:2px;
+            padding: 7px;
+            text-decoration: none;
+			font-family:Arial, Helvetica, sans-serif; font-size:18px; font-weight:700; text-transform: capitalize; color:#999999;
+        }
+ 
+        UL.view360 LI A.selected,
+        UL.view360 LI A:hover {
+            background-color: #c9ccff;
+            color: #333;border-bottom:1px solid #c9ccff !important;
+            
+        }
+ 
+        UL.view360 LI A:focus {
+            outline: 0;
+        }
+ 
+        div.tab360 > div {
+            margin-top: 0; background-color:#FFFFFF;
+        }

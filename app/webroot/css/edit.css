@@ -1,0 +1,194 @@
+@charset "UTF-8";
+/* CSS Ajinkya - ALL PAGES */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td
+ {margin: 0;padding: 0;border: 0;outline: 0;
+ font-size: 100%;vertical-align: baseline;
+ background: transparent;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: ''; content: none;}
+:focus {outline: 0;}
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+table {border-collapse: collapse;border-spacing: 0;}
+
+@font-face {
+    font-family: 'Gotham-Book';
+    src: url('../fonts/gothmbok.eot');
+    src: url('../fonts/gothmbok.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gothmbok.woff') format('woff'),
+         url('../fonts/gothmbok.ttf') format('truetype'),
+         url('../fonts/gothmbok.svg#gothmbok') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham-Medium';
+	src: url('../fonts/gothmmed.eot');
+	src: url('../fonts/gothmmed.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/gothmmed.woff') format('woff'),
+	url('../fonts/gothmmed.ttf') format('truetype'),
+	url('../fonts/gothmmed.svg#gothmmed') format('svg');
+	font-weight: normal;
+	font-style: normal;
+		}
+#wrapEdit {
+	margin: auto;
+	height: 428px;
+	width: 508px;
+	background-color: transparent;
+	background-image: url(../images/EditDetails_bg.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	overflow: hidden;
+	position: relative;
+}
+#wrapEmail {
+	margin: auto;
+	height: 298px;
+	width: 408px;
+	background-color: transparent;
+	background-image: url(../images/sendToEmail_bg.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	overflow: hidden;
+	position: relative;
+}
+#close {
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	top: 12px;
+	left: 476px;
+}
+#close2 {
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	top: 12px;
+	left: 377px;
+}
+#editForm {
+	margin: 52px 44px;
+}
+#editForm h1 {
+	font-family: Gotham-Book !important;
+	font-size: 25px;
+	text-transform: uppercase; font-weight:100;
+	color: #000;margin-bottom:15px;
+}
+.label1 {
+	font-family: Gotham-Medium !important;
+	font-size: 13px;
+	font-weight:100;
+	color: #000;
+	display: block;
+	width: 113px;
+	float: left;
+	padding-top:5px; height:21px;
+}
+.label2 {
+	font-family: Gotham-Medium !important;
+	font-size: 13px;
+	font-weight:100;
+	color: #000;
+	display: block;
+	width: 113px;
+	float: left;
+	padding-top:1px; height:21px;
+}
+.label3 {
+	font-family: Gotham-Medium !important;
+	font-size: 15px;
+	font-weight:100;
+	color: #000; display:block;
+	padding-top:1px; height:21px; margin-bottom:4px;
+}
+.textfield1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: 100;
+	color: #000;
+	text-indent: 5px;
+	background-color: #FFF;
+	border: 1px solid #ccc;
+	width: 258px;
+	height: 23px;
+	float: left;margin-bottom:10px; clear:right;
+}
+.textfield2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: 100;
+	color: #000;
+	text-indent: 5px;
+	background-color: #feedcc;
+	border: 1px solid #ccc;
+	width: 258px;
+	height: 23px;
+	float: left;margin-bottom:10px; clear:right;
+}
+.textfield3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: 100;
+	color: #000;
+	text-indent: 5px;
+	background-color: #FFF;
+	border: 1px solid #ccc;
+	width: 309px;
+	height: 23px;
+	float: left;margin-bottom:10px; clear:right;
+}
+.textarea1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: 100;
+	color: #000;
+	text-indent: 5px;
+	background-color: #FFF;
+	border: 1px solid #ccc;
+	width: 258px;
+	height: 73px;
+	float: left;margin-bottom:10px; clear:right; resize:none;
+}
+  #submit{
+	  width:64px;
+	  height:30px;
+	  border:none;
+	  float:left;
+	  background-color: transparent;
+	  background-image: url(../images/saveButton.gif);
+	  background-position: 0px 0px;
+	  background-repeat: no-repeat; cursor:pointer;
+  }
+  #submit2 {
+	  width:80px;
+	  height:30px;
+	  border:none;
+	  float:left;
+	  background-color: transparent;
+	  background-image: url(../images/submitButton.gif);
+	  background-position: 0px 0px;
+	  background-repeat: no-repeat; cursor:pointer;
+  }
+.fix {
+	clear: both;
+	height: 1px;
+	margin-top: -1px;
+}
+#moreButton {
+	margin: 30px 0 0;
+}
+#moreButton p {
+font-family: Gotham-Book !important; font-size:12px; font-weight:100; color:#333333; margin:5px 0;
+}

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Cloggy" default="test">    
+    
+    <target name="clean_cache">
+        <delete verbose="true" failonerror="true">
+            <fileset dir="../../../app/tmp/cache">
+                <include name="models/*" />
+                <include name="persistent/*" />
+            </fileset>
+        </delete>
+    </target>
+    
+    <target name="clean_reports">        
+        <delete dir="webroot/test_reports/${deleted}" verbose="true" />        
+    </target>        
+    
+    <target name="chmod_caches">
+        <chmod mode="0777" verbose="true">
+            <fileset dir="../../../app/tmp/cache">
+                <include name="models/*" />
+                <include name="persistent/*" />
+            </fileset>
+        </chmod>           
+    </target>
+    
+    <target name="run_cake_test">
+        <exec command="./../../../app/Console/cake 
+            test Cloggy ${test_name} 
+            --stderr             
+            --configuration ${phpunit_config}
+            --log-junit webroot/test_reports/${group}/junit.xml
+            --coverage-html webroot/test_reports/${group}/coverage_ui
+            --coverage-clover webroot/test_reports/${group}/clover.xml" passthru="true" />
+    </target>
+    
+    <target name="update_language" depends="clean_cache">
+        <exec command="./../../../app/Console/cake i18n extract --plugin Cloggy" passthru="true" />
+    </target>
+    
+    <target name="test_components" depends="clean_cache">
+        <phingcall target="clean_reports">
+            <property name="deleted" value="components" />
+        </phingcall> 
+        <phingcall target="run_cake_test">
+            <property name="test_name" value="AllComponent" />
+            <property name="group" value="components" />
+            <property name="phpunit_config" value="cloggy.phpunit.component.xml" />
+        </phingcall>
+        <phingcall target="chmod_caches" />  
+        <phingcall target="clean_cache" />  
+    </target>
+    
+    <target name="test_helpers" depends="clean_cache">
+        <phingcall target="clean_reports">
+            <property name="deleted" value="helpers" />
+        </phingcall>   
+        <phingcall target="run_cake_test">
+            <property name="test_name" value="AllHelper" />
+            <property name="group" value="helpers" />
+            <property name="phpunit_config" value="cloggy.phpunit.helper.xml" />
+        </phingcall>    
+        <phingcall target="chmod_caches" />    
+        <phingcall target="clean_cache" />  
+    </target>
+    
+    <target name="test_libs" depends="clean_cache">
+        <phingcall target="clean_reports">
+            <property name="deleted" value="libs" />
+        </phingcall> 
+        <phingcall target="run_cake_test">
+            <property name="test_name" value="AllLib" />
+            <property name="group" value="libs" />
+            <property name="phpunit_config" value="cloggy.phpunit.xml" />
+        </phingcall>   
+        <phingcall target="chmod_caches" />          
+        <phingcall target="clean_cache" /> 
+    </target>
+    
+    <target name="test_models" depends="clean_cache">
+        <phingcall target="clean_reports">
+            <property name="deleted" value="models" />
+        </phingcall> 
+        <phingcall target="run_cake_test">
+            <property name="test_name" value="AllModel" />
+            <property name="group" value="models" />
+            <property name="phpunit_config" value="cloggy.phpunit.xml" />
+        </phingcall>    
+        <phingcall target="chmod_caches" />       
+        <phingcall target="clean_cache" />  
+    </target>
+    
+    <target name="test" description="testing">
+        <echo>Cloggy Automate Build</echo>
+        <phingcall target="test_components" />
+        <phingcall target="test_helpers" />
+        <phingcall target="test_libs" />
+        <phingcall target="test_models" />     
+        <phingcall target="update_language" />   
+        <phingcall target="clean_cache" />
+    </target>
+
+</project>

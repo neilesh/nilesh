@@ -1,0 +1,58 @@
+/* HTML */
+body {
+  background-color:#003333;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  font-size:12px;
+  color:#CCCCCC;
+}
+ 
+a { 
+  color:#FFCC33;
+}
+ 
+/* Classes */
+.date {
+  float:right;
+  color:#333333;
+}
+ 
+.readon {
+  background-color:#009966;
+  border-style:solid;
+  border-color:#000000;
+  color:#FFCC33;
+  padding:2px;
+  font-size:10px;
+}
+ 
+/* Blog */
+#blog {
+  width:500px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-top:15px;
+}
+ 
+#blog .article {
+  background-color:#336666;
+  padding:5px 10px 10px 10px;
+}
+ 
+#blog .article h1 a {
+  color:#FFCC33;
+  text-decoration:none;
+}
+ 
+#blog .article h1 a:hover {
+  text-decoration:underline;
+}
+ 
+/* Article */
+#article {
+  width:500px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:15px;
+  background-color:#336666;
+  padding:5px 10px 10px 10px;
+}
