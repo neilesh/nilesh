@@ -1,0 +1,21 @@
+<?php
+class IndexController extends AppController {
+<<<<<<< HEAD
+	function index(){
+		
+	}
+=======
+>>>>>>> 295a8831339dedebed971d2eb889645e0a7d848e
+	public function admin_index(){
+
+	}
+	public function view(){
+		if (!$id) {
+            $this->Session->setFlash('Invalid user');
+            $this->redirect(array('action' => 'index'));
+        }
+        $this->set('user', $this->User->findById($id));
+	}
+
+}
+?>

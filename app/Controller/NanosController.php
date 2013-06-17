@@ -1,11 +1,24 @@
-<?php
-class NanosController extends AppController
-{
-	public $helpers = array('Form', 'Html', 'Js', 'Time');
-	
-	function index()
-	{
-		echo "welcome to sodel family";
+<?php  
+class NanosController extends AppController{
+
+	public function index(){
+
 	}
+
+	public function my_account(){
+		
+	}
+	public function post_action() {
+		
+	}
+	public function config(){
+
+	}
+
+	public function form_action(){
+		
+	}
+
 }
- ?>
+
+?>
